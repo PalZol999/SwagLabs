@@ -18,7 +18,7 @@ password_field.send_keys(password)
 
 password_field.send_keys(Keys.RETURN)
 
-time.sleep(1)
+time.sleep(2)
 
 try:
     items_to_add = ["add-to-cart-sauce-labs-bike-light", 
@@ -31,7 +31,7 @@ try:
     for item_id in items_to_add:
         add_item = driver.find_element(By.ID, item_id)
         add_item.click()
-        time.sleep(2)  
+        time.sleep(1)  
 
     total_item = driver.find_element(By.XPATH, "/html/body/div/div/div/div[1]/div[1]/div[3]/a/span")
 

@@ -49,6 +49,6 @@ except Exception as e:
 cart_icon = driver.find_element(By.XPATH, "/html/body/div/div/div/div[1]/div[1]/div[3]/a")   
 cart_icon.click()
 
-time.sleep(2)
+time.sleep(1)
 
 driver.quit()
