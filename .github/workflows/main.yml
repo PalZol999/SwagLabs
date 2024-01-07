@@ -33,9 +33,6 @@ jobs:
       - name: Locked user
         run: python locked_user.py
 
-      - name: Login report
-        run: python login_report.py
-
       - name: Remove items from cart
         run: python remove_items_from_cart.py
 
