@@ -19,10 +19,10 @@ jobs:
           python-version: 3.8
 
       - name: Run user_login.py
-      run: python user_login.py
+        run: python user_login.py
 
-    - name: Run cart_page.py
-      run: python cart_page.py
+      - name: Run cart_page.py
+        run: python cart_page.py
 
-    - name: Run all_items_to_cart.py
-      run: python all_items_to_cart.py
+      - name: Run all_items_to_cart.py
+        run: python all_items_to_cart.py
