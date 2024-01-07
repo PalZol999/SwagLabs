@@ -1,0 +1,28 @@
+name: Run Scripts
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  run-scripts:
+    runs-on: windows
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  
+
+    - name: Run user_login.py
+      run: python user_login.py
+
+    - name: Run cart_page.py
+      run: python cart_page.py
+
+    - name: Run all_items_to_cart.py
+      run: python all_items_to_cart.py
