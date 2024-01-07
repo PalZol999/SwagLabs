@@ -38,3 +38,6 @@ jobs:
 
       - name: User login
         run: python user_login.py
+
+      - name: Dog picture
+        run: python img_recog.py
