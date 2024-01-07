@@ -24,12 +24,9 @@ jobs:
 
       - name: Run user_login.py
         run: python user_login.py
-        continue-on-error: true
 
       - name: Run cart_page.py
         run: python cart_page.py
-        continue-on-error: true
 
       - name: Run all_items_to_cart.py
         run: python all_items_to_cart.py
-        continue-on-error: true
