@@ -18,7 +18,7 @@ password_field.send_keys(password)
 
 password_field.send_keys(Keys.RETURN)
 
-time.sleep(2)
+time.sleep(1)
 
 try:
     items_to_add = ["add-to-cart-sauce-labs-bike-light", 
