@@ -29,7 +29,3 @@ jobs:
       - name: Run all_items_to_cart.py
         run: python all_items_to_cart.py
         continue-on-error: true
-        
-      - name: Check overall success
-         run: exit $(jobs -p | xargs -I{} sh -c 'wait {} && echo $?')
-
