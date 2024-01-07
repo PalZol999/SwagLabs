@@ -1,1 +1,1 @@
-Login Time: 5.550161361694336 seconds
+Total Time: 5.524805307388306 seconds

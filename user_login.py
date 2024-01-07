@@ -23,9 +23,15 @@ password_field.send_keys(Keys.RETURN)
 end_time = time.time()
 elapsed_time = end_time - start_time
 
-print(f"Login Time: {elapsed_time} seconds")
+total_time_message = f"Total Time: {elapsed_time} seconds"
+print(total_time_message)
 
 with open("login_report.txt", "w") as file:
-    file.write(f"Login Time: {elapsed_time} seconds")
+    file.write(total_time_message)
+
+if elapsed_time > 2:
+    print("Test failed: Login time exceeded 2 seconds")
+else:
+    print("Test passed: Login time within 2 seconds")
 
 driver.quit()
