@@ -35,7 +35,7 @@ try:
     element = wait.until(EC.presence_of_element_located((By.ID, "add-to-cart-sauce-labs-bike-light")))
     
 except Exception as e:
-    print(f"Test failed: \n {e}")
+    print(f" Item cannot be remove: Test failed: \n {e}")
     
 finally:
     driver.quit()

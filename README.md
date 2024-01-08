@@ -21,7 +21,7 @@ The process has been split into 3 parts:
 - All the test scripts are uploaded in this repository: https://github.com/PalZol999/SwagLabs
   - I've used Python as a code language
   - and Selenium WebDriver for the automation framework
-  - You can eventualy "Fork" the entire repository to run it on VScode ("pip install selenium" is required)
+  - You can eventualy "Fork" the entire repository to run it on VScode ("pip install selenium" and "pip install pyautogui" is required)
 
 3/ I've created GitHub Actions to run all scripts:
 
