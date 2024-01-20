@@ -4,7 +4,7 @@ Automation test flow for Swag_Labs
 
 The process has been split into 3 parts:
 
-1/ The test set:
+I/ The test set:
 
 - Please open:
   https://avraisdire.qatouch.com/login
@@ -16,20 +16,25 @@ The process has been split into 3 parts:
 - Choose and click "Swag_labs"
 - You will find the "Test Cases" and the "Issues" regarding the website
 
-2/ The test scripts:
+II/ The test scripts:
 
 I've used selenium for the automation phase and pytest for the logging, HTML result and the paralelle runing
 
-selenium # for the test automation
-pyautogui # for the image recognition
-pytest # for the test running on the Terminal
-pytest-html # for the logging report in HTML
-logging # for the logging file
-pytest-xdist # for the paralelle running
-logbook # for the detailed report in the HTML
+1. Download the scripts folder:
+   https://github.com/PalZol999/SwagLabs > Code > Donwload ZIP
 
-3/ I've created GitHub Actions to run all scripts:
+2. Open the folder in VS Code
+
+3. In the terminal install the following requierments:
+
+   pip install selenium pyautogui pytest logging logbook
+
+4. Then run all 6 scripts:
+
+   pytest --html=report/report.html test -n 6
+
+5. You can check the result in the newly created HTML file:
+
+III/ I've created GitHub Actions to run all scripts:
 
 - After every update to the repository, all the scripts will run automatically
-
-pytest --html=report/report.html -n auto test
