@@ -1,7 +1,7 @@
-selenium        # for the test automation
-pyautogui       # for the image recognition
-pytest          # for the test running on the Terminal
-pytest-html     # for the logging report in HTML 
-logging         # for the logging file
-pytest-xdist    # for the paralelle running
-logbook         # for the detailed report in the HTML 
+selenium        
+pyautogui       
+pytest          
+pytest-html    
+logging         
+pytest-xdist   
+logbook         

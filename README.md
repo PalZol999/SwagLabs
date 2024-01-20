@@ -18,15 +18,18 @@ The process has been split into 3 parts:
 
 2/ The test scripts:
 
-- All the test scripts are uploaded in this repository: https://github.com/PalZol999/SwagLabs
-  - I've used Python as a code language
-  - and Selenium WebDriver for the automation framework
-  - You can eventualy "Fork" the entire repository to run it on VScode ("pip install selenium" and "pip install pyautogui" is required)
+I've used selenium for the automation phase and pytest for the logging, HTML result and the paralelle runing
+
+selenium # for the test automation
+pyautogui # for the image recognition
+pytest # for the test running on the Terminal
+pytest-html # for the logging report in HTML
+logging # for the logging file
+pytest-xdist # for the paralelle running
+logbook # for the detailed report in the HTML
 
 3/ I've created GitHub Actions to run all scripts:
 
 - After every update to the repository, all the scripts will run automatically
-- You can check the results in the repository by:
-  Actions > #the name of the latest commit# > run-script
 
 pytest --html=report/report.html -n auto test
