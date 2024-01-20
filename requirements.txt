@@ -1,7 +1,6 @@
-selenium        
-pyautogui       
-pytest          
-pytest-html    
-logging         
-pytest-xdist   
-logbook         
+selenium==3.141.0
+pyautogui==0.9.52
+pytest==7.1.2
+pytest-html==3.1.1
+logbook==1.5.3
+pytest-xdist==3.4.0
