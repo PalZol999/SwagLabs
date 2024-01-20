@@ -28,3 +28,5 @@ The process has been split into 3 parts:
 - After every update to the repository, all the scripts will run automatically
 - You can check the results in the repository by:
   Actions > #the name of the latest commit# > run-script
+
+pytest --html=report/report.html -n auto test
