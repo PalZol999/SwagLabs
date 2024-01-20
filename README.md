@@ -20,20 +20,21 @@ II/ The test scripts:
 
 I've used selenium for the automation phase and pytest for the logging, HTML result and the paralelle runing
 
-1. Download the scripts folder:
-   https://github.com/PalZol999/SwagLabs > Code > Donwload ZIP
+- Download the scripts folder:
+  https://github.com/PalZol999/SwagLabs > Code > Donwload ZIP
 
-2. Open the folder in VS Code
+- Open the folder in VS Code
 
-3. In the terminal install the following requierments:
+- In the terminal install the following requierments:
 
-   pip install selenium pyautogui pytest logging logbook
+         pip install selenium pyautogui pytest logging logbook
 
-4. Then run all 6 scripts:
+- Then run all 6 scripts:
 
-   pytest --html=report/report.html test -n 6
+         pytest --html=report/report.html test -n 6
 
-5. You can check the result in the newly created HTML file:
+- open the newly ceated report folder > within this you will find the report.html file
+  you can see all the logs results of the automated tests
 
 III/ I've created GitHub Actions to run all scripts:
 
