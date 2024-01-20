@@ -25,19 +25,19 @@ jobs:
       ############################################################################
 
       - name: All items to cart
-        run: test/python test_all_items_to_cart.py
+        run: ./test/test_all_items_to_cart.py
 
       - name: Cart Page
-        run: test/python test_cart_page.py
+        run: ./test/python test_cart_page.py
 
       - name: Locked user
-        run: test/python test_locked_user.py
+        run: ./test/python test_locked_user.py
 
       - name: Remove items from cart
-        run: test/python test_remove_items_from_cart.py
+        run: ./test/python test_remove_items_from_cart.py
 
       - name: User login
-        run: test/python test_user_login.py
+        run: ./test/python test_user_login.py
 
       - name: Dog picture
-        run: test/python test_img_recog.py
+        run: ./test/python test_img_recog.py
