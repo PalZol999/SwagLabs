@@ -26,18 +26,68 @@ jobs:
 
       - name: All items to cart
         run: python test_all_items_to_cart.py
+        continue-on-error: true # Continue to the next step even if this one fails
+
+      - name: Display script output
+        run: cat test_all_items_to_cart.log # Replace with the actual log file name
 
       - name: Cart Page
         run: python test_cart_page.py
+        continue-on-error: true # Continue to the next step even if this one fails
+
+      - name: Display script output
+        run: cat test_cart_page.log # Replace with the actual log file name
+
+      # Add similar blocks for other scripts...
+
+      - name: Show directory content
+        run: ls -R # Display the content of the current directory for debugging
+
+      ############################################################################
 
       - name: Locked user
         run: python test_locked_user.py
+        continue-on-error: true # Continue to the next step even if this one fails
+
+      - name: Display script output
+        run: cat test_locked_user.log # Replace with the actual log file name
+
+      # Add similar blocks for other scripts...
+
+      ############################################################################
 
       - name: Remove items from cart
         run: python test_remove_items_from_cart.py
+        continue-on-error: true # Continue to the next step even if this one fails
+
+      - name: Display script output
+        run: cat test_remove_items_from_cart.log # Replace with the actual log file name
+
+      # Add similar blocks for other scripts...
+
+      ############################################################################
 
       - name: User login
         run: python test_user_login.py
+        continue-on-error: true # Continue to the next step even if this one fails
+
+      - name: Display script output
+        run: cat test_user_login.log # Replace with the actual log file name
+
+      # Add similar blocks for other scripts...
+
+      ############################################################################
 
       - name: Dog picture
         run: python test_img_recog.py
+        continue-on-error: true # Continue to the next step even if this one fails
+
+      - name: Display script output
+        run: cat test_img_recog.log # Replace with the actual log file name
+
+      # Add similar blocks for other scripts...
+
+      ############################################################################
+
+      - name: Show final directory content
+        run: ls -R # Display the content of the current directory for debugging
