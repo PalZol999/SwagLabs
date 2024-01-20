@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2 # Use the latest version
+        uses: actions/checkout@v2 # Use the latest
 
       - name: Set up Python
-        uses: actions/setup-python@v2 # Use the latest version
+        uses: actions/setup-python@v2.7.2 # Use the latest version
         with:
           python-version: 3.8
 
