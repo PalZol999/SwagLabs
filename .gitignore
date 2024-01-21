@@ -2,4 +2,4 @@
 **/.pytest_cache/
 *.pyc
 .vscode
-*.html
+*.html   
