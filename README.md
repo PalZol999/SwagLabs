@@ -20,8 +20,7 @@ II/ The test scripts:
 
 I've used selenium for the automation phase and pytest for the logging, HTML result and the paralelle runing
 
-- Download the scripts folder:
-  https://github.com/PalZol999/SwagLabs > Code > Donwload ZIP
+- Download the folder: gh repo clone PalZol999/SwagLabs
 
 - Open the folder in VS Code
 
