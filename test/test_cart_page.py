@@ -3,6 +3,7 @@ from config import WEBDRIVER, LOG, ITEMS_TO_ADD
 from loging import loging
 import pytest
 import time
+from items.items import add_items_to_cart
 
 def test_cart_page():
      
@@ -10,15 +11,7 @@ def test_cart_page():
     loging.loging(username)
 
     try:
-        for item_id in ITEMS_TO_ADD:
-            add_item = WEBDRIVER.find_element(By.ID, item_id)
-            add_item.click()
-            time.sleep(2) 
-
-        total_item = WEBDRIVER.find_element(By.XPATH, "/html/body/div/div/div/div[1]/div[1]/div[3]/a/span")
-
-        actual_count = int(total_item.text)
-        expected_count = len(ITEMS_TO_ADD)
+        actual_count, expected_count = add_items_to_cart(WEBDRIVER, ITEMS_TO_ADD)
 
         if actual_count == expected_count:
              LOG.info(f"Test successful! Total items: {actual_count}")
