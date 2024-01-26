@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import time
 import pytest
 from config import WEBDRIVER, LOG, ITEMS_TO_ADD 
 from loging import loging
