@@ -27,7 +27,7 @@ I've used selenium for the automation phase and pytest for the logging, HTML res
 
 - In the terminal install the following requierments:
 
-         pip install selenium pyautogui pytest logging logbook
+         pip install selenium pyautogui pytest pytest-xdist logbook
 
 - Then run all 6 scripts:
 
