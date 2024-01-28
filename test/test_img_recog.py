@@ -1,6 +1,5 @@
 import time
 import pyautogui
-import pytest
 from config import WEBDRIVER, LOG
 from loging import loging
 

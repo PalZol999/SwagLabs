@@ -1,5 +1,3 @@
-from selenium.webdriver.common.by import By
-import pytest
 from config import WEBDRIVER, LOG, ITEMS_TO_ADD 
 from loging import loging
 from items.items import add_items_to_cart

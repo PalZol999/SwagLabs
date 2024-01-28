@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from config import WEBDRIVER, LOG
-import pytest
 from loging import loging
 from items.items import add_items_to_cart 
 
